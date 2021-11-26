@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Van Gogh Project</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: rgb(255, 136, 0);
+        font-size: 50px;
+        font-weight: lighter;
+        font-stretch: wider;
+      }
+      h2 {
+        text-align: center;
+        border: 2px solid rgb(255, 136, 0);
+        padding: 20px;
+        font-family: fantasy;
+        font-size: 38px;
+        margin: 40px 40px;
+        background: rgb(255, 136, 0);
+        color: white;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+      }
+      img {
+        margin: 30px auto;
+        max-width: 100%;
+        padding: 3px;
+        border-radius: 10px;
+        box-shadow: inset 5em 1em rgb(255, 136, 0);
+      }
+      button {
+        display: block;
+        margin: 40px auto;
+        background: rgb(255, 136, 0);
+        border: 2px solid rgb(255, 136, 0);
+        color: white;
+        font-size: 18px;
+        padding: 18px 30px;
+        border: none;
+        border-radius: 30px;
+        font-family: fantasy;
+        transition: all 2ms ease-in-out;
+      }
+      button:hover {
+        opacity: 0.8;
+        cursor: pointer;
+      }
+      .name {
+        color: rgb(255, 136, 0);
+      }
+      .more-pictures {
+        display: block;
+        margin: 20px 20px;
+        text-decoration: none;
+        font-size: 16px;
+        text-align: center;
+      }
+      .more-pictures:hover {
+        color: rgb(255, 136, 0);
+        cursor: pointer;
+      }
+      .footer {
+        text-align: center;
+        font-size: 16px;
+        padding: 20px;
+      }
+      .container {
+        max-width: 900px;
+        min-width: 500px;
+        margin: 0 auto;
+        padding: 30px 140px;
+        background: linear-gradient(
+          to bottom,
+          rgb(238, 238, 238),
+          white 80%,
+          rgb(241, 239, 236)
+        );
+      }
+      .pictures {
+        text-align: center;
+      }
+      p {
+        line-height: 1.5;
+        text-align: center;
+        width: 100%;
+      }
+      .maps {
+        text-align: center;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>ONE OF MY FAVORITE PAINTERS</h1>
+      <h2>Vincent Van Gogh</h2>
+      <p>30. March 1853 (Netherlands) - 29. July 1890 (France)</p>
+
+      <div class="pictures">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/013/918/original/st_presse_vangogh_selbstportrait_chicago.jpeg?1627242804"
+          alt="Van Gogh Selfie"
+          width="300"
+        />
+      </div>
+
+      <p>
+        <strong><span class="name">Vincent van Gogh</span></strong> was a Dutch
+        post-impressionist painter who posthumously became one of the most
+        famous and influential figures in the history of Western art. Before
+        deciding to be a painter in 1880, he was an art dealer, teacher, and
+        preacher. In a decade, he created about <strong>2,100 artworks</strong>.
+        They include landscapes, still lifes, portraits and self-portraits, and
+        are characterised by bold colours and dramatic, impulsive and expressive
+        brushwork that contributed to the foundations of modern art. He was not
+        commercially successful, and his suicide, where he shot himself in the
+        chest, at thirty-seven came after years of depression and poverty.
+        <span class="name">His brother Theo</span>, who paid for everything he
+        needed, inherited his collection. <br />At the link below you can find
+        out more about him and also listen to the song
+        <em><span class="name">"Vincent" by Don McLean</span></em> that was
+        inspired by his painting "Starry Night".
+      </p>
+
+      <button>🙋‍♀️ Click Here!</button>
+
+      <a
+        href="https://artsandculture.google.com/story/agLStrYjblBRKA?hl=de"
+        target="_blank"
+        class="more-pictures"
+      >
+        >> 10 Facts you didn't know about Van Gogh <<
+      </a>
+
+      <p>
+        I fell in love with his artwork in Amsterdam. There is a whole museum
+        about him, where you can find next to his paintings also the letters he
+        wrote to <span class="name">his brother Theo</span>.
+        <br />
+        Go and have a look by yourself, you might also fall in love.
+      </p>
+      <br />
+
+      <div class="maps">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2436.6617875634734!2d4.878886915071311!3d52.358419155944695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609ef96d35a5f%3A0xc22828aef97cc51a!2sVan%20Gogh%20Museum!5e0!3m2!1sde!2sde!4v1626973302507!5m2!1sde!2sde"
+          width="500"
+          height="400"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+
+      <br />
+      <hr />
+
+      <p class="footer">This page was build by Irena Lekavski 🧚‍♀️</p>
+    </div>
+
+    <script>
+      function childhood() {
+        let name = prompt("What is your name?");
+        let loveVincent = prompt(
+          "Did you like the song I mentioned? Please answer with YES or NO."
+        );
+        loveVincent = loveVincent.toLowerCase().trim();
+        if (
+          loveVincent === "YES" ||
+          loveVincent === "Yes" ||
+          loveVincent === "yes"
+        ) {
+          alert(
+            "Hi " +
+              name +
+              ". So happy to hear! Then we can enjoy it together and maybe we are lucky and it is a starry night, tonight! 🌃 "
+          );
+        } else {
+          alert(
+            "Sorry to hear " +
+              name +
+              ". I wish you a starry night, tonight! 🌃 "
+          );
+        }
+      }
+      let childhoodButton = document.querySelector("button");
+      childhoodButton.addEventListener("click", childhood);
+    </script>
+  </body>
+</html>
